@@ -22,7 +22,10 @@ export default () => {
       ) : (
         <ul className="text-white space-y-1">
           {history.map((item, index) => (
-            <li key="index" className="flex justify-between">
+            <li
+              key={index}
+              className="flex justify-between border-b border-b-gray-700"
+            >
               <span>{item.expression}</span>
               <span>{item.result}</span>
             </li>
